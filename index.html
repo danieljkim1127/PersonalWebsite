@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Personal Portfolio Website</title>
+		<link rel="stylesheet" href="css/style.css"></link>
+		<!--The first link is to enable use of font awesome for icons+other stuff-->
+		<script src="https://kit.fontawesome.com/5613ef9d51.js" crossorigin="anonymous"></script>
+		<!--The second link is to enable use of jquery which is a javascript library-->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<!--Navigation Bar-->
+		<nav class="navbar">
+			<div class="max-width">
+				<div class="logo">About Me</div>
+				<ul class="menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="menu-btn">
+					<i class="fas fa-bars"></i><!--Gets the menu icon from fontawesome-->
+				</div>
+			</div>
+		</nav>
+
+		<!--Home Section-->
+		<section class="home" id="home">
+			<div class="max-width">
+				<div class="text-1">Hello, my name is</div>
+				<div class="text-2">Daniel Kim</div>
+				<div class="text-3">And I am a <span>student from Stevens Institute of Technology</span></div>
+			</div>
+		</section>
+
+		<!--About Me Section-->
+		<section class="about" id="about">
+			<div class="max-width">
+				<h2 class="title"><b>About Me</b></h2>
+				<div class="about-content">
+					<div class="columnleft">
+						<img src="Assets/profilepic.jpg" alt="">
+					</div>
+					<div class="columnright">
+						<div class="text">My name is Daniel and I am ready to hear from you!</div>
+						<p>I am currently a sophomore studying Computer Science at Stevens Institute of Technology and I
+							am expected to graduate May of 2024. I always had a interest in learning how everything works
+							around me, from the physics of how to calculate where a projectile is going to land to the
+							inner workings of a how a business operates. I eventually fell in love with computer science
+							because I wanted to learn more about all of the software that affects our daily lives and how
+							they work. I have never looked back since.
+						</p>
+						<a href="Assets/Daniel Kim Resume.docx" download>Download CV</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="separator"></div>
+
+		<!--Skills Section-->
+		<section class="skills" id="skills">
+			<div class="max-width">
+				<h2 class="title"><b>My Skills</b></h2>
+				<div class="skills-content">
+					<div class="columnleft">
+						<div class="minihead">My Experience</div>
+						<p>In addition to the many years of computer science that I have studied, my most recent experience
+							was working at Eufinity over the past summer. As my first internship, it was certainly hard as 
+							I had to learn a new programming language that was unlike anything I had seen before and it was 
+							my first time working with a team. Over time, I eventually overcame these struggles and 
+							contributed to the overall development of the app they were creating.
+						</p>
+					</div>
+					<div class="columnright">
+						<div class="minihead">Programming Languages</div>
+						<div class="plevel" id="plevel">Proficiency: </div>
+						<button class="button" onclick="intermediate()">C++</button>
+						<button class="button" onclick="intermediate()">Java</button>
+						<button class="button" onclick="intermediate()">Python</button>
+						<button class="button" onclick="intermediate()">HTML</button>
+						<button class="button" onclick="intermediate()">CSS</button>
+						<button class="button" onclick="basic()">Javascript</button>
+						<button class="button" onclick="basic()">SwiftUI</button>
+						<button class="button" onclick="basic()">OCaml</button>
+						<button class="button" onclick="basic()">C</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="separator"></div>
+
+		<!--Skills Section-->
+		<section class="contact" id="contact">
+			<div class="max-width">
+				<h2 class="title"><b>Contact Me</b></h2>
+				<div class="contact-content">
+					<div class="columnleft">
+						<div class="minihead">My Contact Information</div>
+						<div class="info">
+							<p><b>Name: </b>Daniel Kim</p><br>
+							<p><b>Email: </b>danieljkim1127@gmail.com</p><br>
+							<p><b>LinkedIn: </b>www.linkedin.com/in/daniel-kim-224125227</p></br>
+							<p><b>Phone Number: </b>201-561-4291</p>
+						</div>
+					</div>
+					<div class="columnright">
+						<div class="minihead">Message Me Here!</div>
+						<form action="mailto::danieljkim1127@gmail.com">
+							<div class="fields">
+								<div class="name">
+									<input type="text" placeholder="Name">
+								</div>
+								<div class="email">
+									<input type="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="subject">
+								<input type="text" placeholder="Subject">
+							</div>
+							<div class="message">
+								<textarea placeholder="Message"></textarea>
+							</div>
+							<div class="send">
+								<button type="submit">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> 
+		</section>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
